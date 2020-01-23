@@ -1,0 +1,248 @@
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 38px;
+	position: relative;
+	border-top: 1px solid #2b6abd26;
+	align-items: baseline;
+	
+	&__left {
+		width: 50%;
+		background-color: #f0f6ff;
+		padding: 96px 103px 161px 0;
+		justify-content: flex-end;
+		display: flex;
+		flex-wrap: wrap;
+		@media screen and (max-width: 1200px) {
+			width: calc(100% - 36px);
+			padding: 53px 18px 49px 18px;
+			justify-content: flex-start;
+		}
+
+		&-subtittle {
+			width: 485px;
+			font-size: 30px;
+			margin-bottom: 35px;
+			line-height: 30px;
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+				font-size: 22px;
+				line-height: 30px;
+				margin-bottom: 24px;
+			}
+		}
+		&-tittle {
+			width: 485px;
+			font-size: 108px;
+			line-height: 108px;
+			margin-bottom: 48px;
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+				font-size: 62px;
+				line-height: 60px;
+				margin-bottom: 32px;
+			}
+		}
+		&-block {
+			display: flex;
+			flex-wrap: wrap;
+			width: 376px;
+			background-color: #ffffff;
+			padding: 39px 70px 38px 37px;
+			border: 1px solid #0000001a;
+			border-radius: 6px;
+			box-shadow: 7.6px 10.5px 1px 0 #1064990f;
+			@media screen and (max-width: 1200px) {
+				padding: 30px 35px 29px 29px;
+			}
+		}
+		.phone, .mail, .adress {
+			display: flex;
+			font-size: 16px;
+			@media screen and (max-width: 1200px) {
+				font-size: 14px;
+				line-height: 20px;
+				width: 100%;
+			}
+		}
+		.phone {
+			margin: 0 39px 31px 0;
+			@media screen and (max-width: 1200px) {
+				margin: 0 0 26px;
+			}
+			&__icon {
+				width: 21px;
+				height: 21px;
+				margin-right: 12px;
+				@media screen and (max-width: 1200px) {
+					width: 20px;
+					height: 20px;
+					margin-right: 13px;
+				}
+			}
+		}
+		.mail {
+			margin: 0 0 31px 0;
+			@media screen and (max-width: 1200px) {
+				margin: 0 0 26px;
+			}
+			&__icon {
+				width: 23px;
+				height: 19px;
+				margin-right: 12px;
+				@media screen and (max-width: 1200px) {
+					width: 21px;
+					height: 17px;
+					margin-right: 13px;
+				}
+			}
+		}
+		.adress {
+			&__icon {
+				width: 31px;
+				height: 24px;
+				fill: #338eff;
+				margin-right: 8px;
+				@media screen and (max-width: 1200px) {
+					min-width: 18px;
+					max-width: 18px;
+					margin-right: 13px;
+				}
+			}
+		}
+	}
+	&__right {
+		display: flex;
+		padding: 94px 0 112px 69px;
+		@media screen and (max-width: 1200px) {
+			padding: 54px 18px 62px;
+			justify-content: center;
+		}
+		.callback {
+			width: 513px;
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+			}
+
+			&__tittle {
+				font-family: 'LatoBold';
+				font-size: 26px;
+				font-weight: bold;
+				margin-bottom: 13px;
+				@media screen and (max-width: 1200px) {
+					font-size: 24px;
+				}
+			}
+			&__message {
+				font-size: 14px;
+				line-height: 17px;
+				font-weight: bold;
+				margin-bottom: 29px;
+				@media screen and (max-width: 1200px) {
+					margin-bottom: 26px;
+				}
+			}
+			&__checkbox_group {
+				display: flex;
+				font-size: 16px;
+				font-family: 'LatoBold';
+				line-height: 18px;
+				margin-bottom: 30px;
+				@media screen and (max-width: 1200px) {
+					font-size: 15px;
+					line-height: 16px;
+				}
+				
+				&__checkbox {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 18.8px;
+					height: 16.8px;
+					position: relative;
+					border: 1px solid #0000004d;
+					border-radius: 3px;
+					margin-right: 12.2px;
+					@media screen and (max-width: 1200px) {
+						min-width: 18.8px;
+						max-width: 18.8px;
+						margin-right: 8.2px;
+					}
+						&.active {
+							border-color: #338eff;
+							&:before, &:after{
+								content: '';
+								height: 2px;
+								position: absolute;
+								background-color: #338eff;
+							}
+							&:before {
+								width: 6px;
+								transform: rotate(47deg) translateY(4.5px) translateX(-2px);;
+							}
+							&:after {
+								width: 14px;
+								transform: rotate(-50deg) translateY(7px) translateX(-1px);
+								transform-origin: left;
+							}
+						}
+						
+				}
+			}
+			&__politic {
+				display: none;
+			}
+			&__button {
+				background: none;
+				padding: 15px 47px;
+				font-size: 12px;
+				line-height: 12px;
+				@media screen and (max-width: 1200px) {
+					padding: 12.5px 42px;
+					font-size: 11px;
+					line-height: 11px;
+				}
+				&:hover {
+					background-color: #338eff;
+				}
+			}
+			&__user__name, &__user__mail, &__user__message {
+				width: calc(100% - 21px);
+				padding: 17px 0 17px 21px;
+				font-size: 14px;
+				line-height: 19.6px;
+				background: none;
+				outline: none;
+				border-radius: 5px;
+				border: 1px solid #0000001a;
+				margin-bottom: 13px;
+			}
+			&__user__name, &__user__mail, &__user__message {
+				padding: 13px 0 13px 21px ;
+				@media screen and (max-width: 1200px) {
+					padding: 13px 0 13px 16px ;
+					font-size: 13px ;
+				}
+			}
+			&__user__message {
+				max-height: 136px ;
+				@media screen and (max-width: 1200px) {
+					max-height: 110px ;
+					margin-bottom: 22px ;
+				}
+			}
+}
+	}
+	&__map {
+		width: 100%;
+		height: 502px;
+		display: flex;
+		border-top: 1px solid #2b6abd26;
+		border-bottom: 1px solid #0000001a;
+		.map {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+

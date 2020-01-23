@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('fonts/LatoRegular.eot');
+    src: url('fonts/LatoRegular.woff') format('woff'), 
+         url('fonts/LatoRegular.woff2') format('woff2'),
+         url('fonts/LatoRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoMedium';
+    src: url('fonts/LatoRegular.eot');
+    src: url('fonts/LatoRegular.woff') format('woff'), 
+         url('fonts/LatoRegular.woff2') format('woff2'),
+         url('fonts/LatoRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('fonts/LatoBold.eot');
+    src: url('fonts/LatoBold.woff') format('woff'), 
+         url('fonts/LatoBold.woff2') format('woff2'),
+         url('fonts/LatoBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoBlack';
+    src: url('fonts/LatoBlack.eot');
+    src: url('fonts/LatoBlack.woff') format('woff'),
+         url('fonts/LatoBlack.woff2') format('woff2'),
+         url('fonts/LatoBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

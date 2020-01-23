@@ -1,0 +1,35 @@
+.antarctida {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 420px;
+    bottom: 0;
+    overflow: hidden;
+
+    &__background {
+        width: 100%;
+        height: 115%;
+        fill: #ffffff;
+        stroke: #dde1e6;
+        stroke-width: 1.5px;
+        margin-top: -25px;
+        &-blue{
+            width: 100%;
+            height: 115%;
+            fill: none;
+            stroke: #ffffff;
+            margin-top: -25px;
+        }
+        @media screen and (max-width: 1200px) {
+            margin-top: 50px; 
+            width: 1092px;
+        }
+    }
+    @media screen and (max-width: 1580px) {
+    	background-size: 110%;
+    }
+
+    @media screen and (max-width: 1580px) {
+        background-size: auto;
+    }
+}

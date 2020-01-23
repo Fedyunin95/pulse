@@ -1,0 +1,88 @@
+.documents {
+	display: flex;
+	flex-direction: column;
+	background-color: #f0f6ff;
+	padding: 69px 18px 117px;
+	border-top: 1px solid #2b6abd26;
+	border-bottom: 1px solid #2b6abd26;
+	margin-bottom: 37px;
+	@media screen and (max-width: 1200px) {
+		padding: 57px 18px;
+	}
+
+	&__tittle {
+		font-size: 46px;
+		font-family: 'LatoBold';
+		font-weight: bold;
+		text-align: center;
+		margin: 0 auto 59px;
+		@media screen and (max-width: 1200px) {
+			font-size: 36px;
+		}
+	}
+	&__wrap {
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1034px;
+		@media screen and (max-width: 1200px) {
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+	.document {
+		&__block {
+			display: flex;
+			max-width: 291px;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 22px 0 0;
+			border-radius: 6px;
+			background: #ffffff;
+			box-shadow: 7.6px 10.5px 1px 0 #0000001a;
+			font-size: 13px;
+			line-height: 18px;
+			text-align: center;
+			margin-right: 74px;
+			margin-bottom: 36px;
+			@media screen and (max-width: 1200px) {
+				margin-right: 0;
+				margin-bottom: 27px;
+			}
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			&_icon {
+				margin: 0 auto 23px;
+				max-width: 41px;
+				max-height: 40px
+			}
+			.blue {
+				fill: #338eff;	
+			}
+			.orange {
+				fill: #ff6407;
+			}
+			&_tittle, &_text {
+				width: 100%;
+				padding: 0 39px;
+			}
+			&_text {
+				margin-bottom: 25px;
+			}
+			&_link {
+				width: 100%;
+				padding: 18px 0;
+				border-top: 1px solid #0000001a;
+				text-transform: uppercase;
+				color: #7c7c7c;
+
+				&:hover {
+					color: #338eff;
+				}
+			}
+		}
+	}
+}

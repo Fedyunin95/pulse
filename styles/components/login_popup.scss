@@ -1,0 +1,235 @@
+@keyframes fade-in {
+	from {opacity: 0;}
+	50% {opacity: 0.5;}
+	to {opacity:1;}
+}
+@keyframes fade-put {
+	from {opacity: 1;}
+	50% {opacity: 0.5;}
+	to {opacity:0;}
+}
+
+.popup__login-form {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	background: #00000017;
+	z-index: 50;
+	opacity: 0;
+	animation: fade-out 0.8s;
+
+	&:target {
+		display: flex;
+		animation: fade-in 0.6s;
+		opacity: 1;
+	}
+
+	.login {
+		width: 478px;
+		height: 373px;
+		flex-wrap: wrap;
+		background: #ffffff;
+		box-shadow: 7.6px 10.5px 1px 0 rgba(16, 100, 153, 0.06);
+		border: solid 1px rgba(0, 0, 0, 0.1);
+		border-radius: 6px;
+		padding: 20px 0;
+
+		@media screen and (max-width: 1200px) {
+			width: 253px;
+			height: auto;
+			padding: 17px 15px;
+		}
+
+		&__close_button {
+			    width: auto;
+			    height: 16px;
+			    display: flex;
+			    justify-content: flex-end;
+			    padding-right: 20px;
+			    animation: fade-out 0.8s;
+
+			    &__icon {
+			    	height: 16px;
+					width: 16px;
+					fill: #7c7c7c;
+			    }
+		}
+
+		&__tittle {
+			width: 100%;
+			font-size: 26px;
+			margin-bottom: 34px;
+			text-align: center;
+
+			@media screen and (max-width: 1200px) {
+				margin-bottom: 25px;
+			}
+		}
+
+		&__input  {
+			display: flex;
+			width: 400px;
+			margin: 0 40px 16px;
+			height: 29px;
+			font-size: 14px;
+			padding: 8px 0;
+			border-radius: 5px;
+			border: solid 1px #d9d9d9;
+			align-items: center;
+			position: relative;
+
+			@media screen and (max-width: 1200px) {
+				width: 253px;
+				margin: 0 0 16px;
+				padding-right: 0;
+			}
+
+			&_icon {
+				width: 19px;
+				padding: 0 14px;
+				height: 30px;
+				border-right: solid 1px #d9d9d9;
+				fill: #7c7c7c;
+			}
+
+			&_field {
+				display: flex;
+				align-self: center;
+				margin-left: 13px;
+				width: calc(100% - 90px);
+				font-size: 14px;
+				border: none;
+				color: #7c7c7c;
+				padding: 8px 0;
+				outline: none;
+			}
+		}
+
+		&__password_visibility-icon {
+			width: 25px;
+			height: 19px;
+			margin-right: 17px;
+			cursor: pointer;
+			fill: #7c7c7c;
+			@media screen and (max-width: 1200px) {
+				width: 22px;
+				height: 17px;
+				right: 4px;
+				margin-right: 0;
+				position: absolute;
+			}
+		}
+
+		&__checkbox_group {
+			display: flex;
+			width: 400px;
+			margin: 0 auto 25px;
+
+			&__checkbox {
+				width: 16px;
+				height: 17px;
+				opacity: 0.3;
+				border-radius: 3px;
+				border: solid 1px #000000;
+				margin-right: 7px;
+
+				&.active {
+					opacity: 1;
+					border-color: #1b8cff;
+					&:before {
+					content: '';
+					width: 3px;
+					border: 1px solid #1b8cff;
+					transform: rotate(50deg);
+					display: flex;
+					margin-top: 10px;
+					margin-left: 2px;
+					}
+					&:after {
+						content: '';
+						width: 8px;
+						border: 1px solid #1b8cff;
+						transform: rotate(-51deg);
+						display: flex;
+						margin-top: -5px;
+						margin-left: 4px;
+					}
+				}				
+			}
+		}
+
+		&__company_politic {
+			display: none;
+		}
+
+		&__company_polytic_label {
+			font-size: 14px;
+			line-height: 17px;
+			width: 100%;
+
+			@media screen and (max-width: 1200px) {
+				font-size: 13px;
+				line-height: 16.5px;
+				max-width: 228px;
+			}
+
+			&__link {
+				color: #338eff;
+			}
+		}
+
+		.buttons {
+			display: flex;
+			margin: 0 auto 33px;
+			width: 400px;
+			align-items: center;
+
+			@media screen and (max-width: 1200px) {
+				margin: 0 auto 18px;
+				width: 100%;
+				flex-wrap: wrap;
+			}
+		}
+
+		&__button {
+			font-size: 12px;
+			padding: 12px 49.5px;
+			margin-right: 23px;
+
+			@media screen and (max-width: 1200px) {
+				font-size: 11px;
+				padding: 14px 17px;
+				margin-right: 0;
+				width: 100%;
+				margin-bottom: 17px;
+			}
+		}
+		&__password_recovery {
+			font-size: 14px;
+			color: #7c7c7c;
+
+			@media screen and (max-width: 1200px) {
+				margin: 0 auto;
+			}
+		}
+
+		&__registration_link {
+			font-size: 12px;
+			width: 480px;
+			padding: 19px 0;
+			text-transform: uppercase;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			border-top: 1px solid #00000014;
+			color: #338eff;
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+				padding: 17px 0 0;
+			}
+		}
+	}
+}

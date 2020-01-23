@@ -1,0 +1,177 @@
+.registration {
+	display: flex;
+	margin-bottom: 37px;
+	border-top: 1px solid #2b6abd26;
+	border-bottom: 1px solid #2b6abd26;
+	@media screen and (max-width: 1200px) {
+		flex-wrap: wrap-reverse;
+	}
+	&__wrap, &__wrap_blue {
+		width: 50%;
+		@media screen and (max-width: 1200px) {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&__wrap_blue {
+		flex-wrap: wrap;
+		padding: 95px 92px 0 214px;
+		background-color: #f0f6ff;
+		@media screen and (max-width: 1200px) {
+			padding: 44px 18px 0;
+			overflow-x: hidden;
+			position: relative;
+			flex-direction: column;
+		}
+
+		& .tittle {
+			font-size: 26px;
+			line-height: 21.6px;
+			font-family: 'LatoBold';
+			margin-bottom: 37px;
+			max-width: 495px;
+			@media screen and (max-width: 1200px) {
+				font-size: 24px;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 100%;
+			}
+			@media screen and (max-width: 550px) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		& .advantages__list {
+			max-width: 495px;
+			list-style-type: decimal;
+			font-size: 18px;
+			line-height: 24px;
+			margin-left: 17px;
+			@media screen and (max-width: 1200px) {
+				font-size: 16px;
+				line-height: 20px;
+				margin-left: auto;
+				margin-right: auto;				
+			}
+			@media screen and (max-width: 550px) {
+				max-width: 266px;
+				margin-left: 17px;
+				margin-right: 0;
+			}
+
+			&_item {
+				margin-bottom: 39px;
+				padding-left: 19px;
+			}
+		}
+		& .image {
+			min-width: 540px;
+			height: 277px;
+			background-color: #0000001a;
+			margin: 0 auto;
+			@media screen and (max-width: 1200px) {
+				margin-left: -18px;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 100%;
+			}
+			@media screen and (max-width: 550px) {
+				margin-left: -18px;
+				margin-right: 0;
+			}
+		}
+	}
+	&__wrap {
+		padding: 95px 0 0 73px;
+		@media screen and (max-width: 1200px) {
+			padding: 53px 18px 58px 18px;
+		}
+	}
+
+	&__form {
+		max-width: 511px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		.form__tittle {
+			font-size: 26px;
+			font-family: 'LatoBold';
+			line-height: 1;
+			margin-bottom: 26px;
+			@media screen and (max-width: 1200px) {
+				font-size: 24px;
+			}
+		}
+		& .partner-type__wrap {
+			position: relative;
+			height: 47px;
+			width: 100%;
+			margin-bottom: 13px;
+		
+			& .form__partner-type {
+				width: 100%;
+				height: inherit;
+				padding: 13px 20px;
+				border-radius: 5px;
+				border: 1px solid #d9d9d9;
+				appearance: none;
+				font-size: 14px;
+				line-height: 32;
+				background: url(../../img/down-arrow.svg) no-repeat;
+				background-size: 19px;
+				background-position: center right 10px;
+				cursor: pointer; 
+			}
+		}
+		.input {
+			width: 100%;
+			padding: 13px 20px;
+			border-radius: 5px;
+			border: solid 1px #d9d9d9;
+			font-size: 14px;
+			line-height: 1;
+			box-sizing: border-box;
+			margin-bottom: 13px;
+			@media screen and (max-width: 1200px) {
+				font-size: 13px;
+			}
+		}
+		.password {
+			&__repeat {
+				margin-bottom: 25px;
+				@media screen and (max-width: 1200px) {
+					margin-bottom: 21px;
+				}				
+			}
+		}
+		.checkbox_group {
+			margin-bottom: 25px;
+			@media screen and (max-width: 1200px) {
+				display: flex;
+				font-size: 13px;
+				align-items: baseline;
+			}
+		}
+		.registration__button {
+			padding: 12px 47px 12px;
+			font-size: 12px;
+			background-color: #338eff;
+			color: #ffffff;
+			opacity: 0.65;
+			margin-right: 24px;
+			@media screen and (max-width: 1200px) {
+				margin-bottom: 17px;
+			}
+			&:hover {
+				background-color: #ffffff;
+				color: #338eff;
+				border: 1px solid #338eff;
+			}
+		}
+		.enter {
+			font-size: 14px;
+			color: #7c7c7c;
+		}
+	}
+}

@@ -1,0 +1,127 @@
+.education-block {
+
+	&__tittle {
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 55px;
+		@media screen and (max-width: 790px) {
+			font-size: 26px;
+			margin-bottom: 32px;
+		}
+	}
+
+	&__trainer {
+		display: flex;
+		border-bottom: 1px solid #0000001a;
+		padding-bottom: 55px;
+		margin-bottom: 57px;
+		@media screen and (max-width: 790px) {
+			padding-bottom: 47px;
+			margin-bottom: 48px;
+			flex-wrap: wrap;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&_photo {
+			width: 240px;
+			max-height: 269px;
+			margin-right: 33px;
+			@media screen and (max-width: 790px) {
+				min-height: 269px;
+				margin-bottom: 23px;
+			}
+		}
+		&_information {
+			max-width: 491px;
+		}
+		&_name {
+			font-size: 24px;
+			line-height: 24px;
+			margin-bottom: 9px;
+			@media screen and (max-width: 790px) {
+				font-size: 22px;
+				margin-bottom: 8px;
+			}
+		}
+		&_type {
+			font-size:16px;
+			line-height: 16px;
+			color: #7c7c7c;
+			margin-bottom: 19px;
+			@media screen and (max-width: 790px) {
+				font-size: 14px;
+				line-height: 14px;
+				margin-bottom: 25px;
+			}
+		}
+		&_contacts {
+			display: flex;
+			flex-wrap: wrap;
+
+			.website, .email, .phone {
+				display: flex;
+				align-items: center;
+				margin-bottom: 15px;
+				margin-right: 22px;
+				font-size: 14px;
+				height: 20px;
+				@media screen and (max-width: 790px) {
+					margin-right: 24px;
+					font-size: 13px;
+					margin-bottom: 14px;
+				}
+
+				&__icon {
+					width: 19px;
+					height: 19px;
+					margin-right: 6px;
+					fill: #338eff;
+					@media screen and (max-width: 790px) {
+						width: 18px;
+						height: 18px;
+						margin-right: 5px;
+					}
+				}
+			}
+			.email {
+				@media screen and (max-width: 790px) {
+					margin-right: 0;
+				}
+			}
+			.phone {
+				&__icon{
+					width: 13px;
+					height: 13px;
+				}
+			}
+
+			.recomended__course {
+				width: 100%;
+				padding-top: 26px;
+				border-top: 1px solid #0000001a;
+				font-size: 14px;
+				color: #338EFF;
+				margin-bottom: 8px;
+			}
+			.short__description	{
+				&_tittle {
+					font-size: 20px;
+					margin-bottom: 20px;
+					@media screen and (max-width: 790px) {
+						font-size: 18px;
+						margin-bottom: 14px;
+					}
+				}
+				&_text {
+					font-size: 14px;
+					@media screen and (max-width: 790px) {
+						font-size: 13px;
+						line-height: 17px;
+					}
+				}
+			}
+		}	
+	}
+}
